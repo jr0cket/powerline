@@ -21,7 +21,7 @@
 
 (require 'cl-lib)
 
-(defface powerline-active0 '((t (:foreground "deep pink" :weight bold :background "black" :inherit mode-line)))
+(defface powerline-active0 '((t (:foreground "purple" :weight bold :background "#d0d0f0" :inherit mode-line)))
   "Powerline face 0."
   :group 'powerline)
 
