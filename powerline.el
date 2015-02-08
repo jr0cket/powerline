@@ -13,22 +13,30 @@
 ;;; Commentary:
 ;;
 ;; Powerline is a library for customizing the mode-line that is based on the Vim
-;; Powerline. A collection of predefined themes comes with the package.
-;;
+;; Powerline. A collection of predefined themes comes with the package
 
-;;; Code:
 
 (require 'powerline-themes)
 (require 'powerline-separators)
 
 (require 'cl-lib)
 
-(defface powerline-active1 '((t (:background "grey22" :inherit mode-line)))
+(defface powerline-active0 '((t (:foreground "purple" :weight bold :background "#d0d0f0" :inherit mode-line)))
+  "Powerline face 0."
+  :group 'powerline)
+
+(defface powerline-active1 '((t (:foreground "#d0d0f0" :background "purple" :inherit mode-line)))
   "Powerline face 1."
   :group 'powerline)
 
-(defface powerline-active2 '((t (:background "grey40" :inherit mode-line)))
+(defface powerline-active2 '((t (:foreground "#63b132" :weight bold :background "black" :inherit mode-line)))
   "Powerline face 2."
+  :group 'powerline)
+
+
+(defface powerline-inactive0
+  '((t (:background "black" :weight bold :inherit mode-line-inactive)))
+  "Powerline face 0."
   :group 'powerline)
 
 (defface powerline-inactive1
@@ -37,11 +45,11 @@
   :group 'powerline)
 
 (defface powerline-inactive2
-  '((t (:background "grey20" :inherit mode-line-inactive)))
+  '((t (:background "black" :inherit mode-line-inactive)))
   "Powerline face 2."
   :group 'powerline)
 
-(defcustom powerline-default-separator 'arrow
+(defcustom powerline-default-separator 'wave
   "The separator to use for the default theme.
 
 Valid Values: arrow, slant, chamfer, wave, brace, roundstub,
