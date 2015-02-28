@@ -1,32 +1,36 @@
-powerline
-=========
+# Powerline - colour & style for the Emacs modeline
 
-Emacs version of the Vim powerline.
+  This is a fork of the [milkypostman powerline](https://github.com/milkypostman/powerline) project, with the following changes:
 
-This is a proposed version 2.0 of the original [Emacs Powerline](http://www.emacswiki.org/emacs/PowerLine) which is a fork of [vim-powerline](https://github.com/Lokaltog/vim-powerline).  
+  - jr0cket theme with Emacs Live style colour theme
+  - additional face to seperate the modeline sections further
+
+  See my blog posts on [tweaking the Emacs modeline with Powerline](http://jr0cket.co.uk/2015/01/tweaking-emacs-modeline-with-powerline.html) and [create a custom them for Emacs Powerline](http://jr0cket.co.uk/2015/01/custom-powerline-theme-for-Emacs-modeline.html) for more details and to see examples of the customised modeline.
+
+> The milkypostman project was a proposed version 2.0 of the original [Emacs Powerline](http://www.emacswiki.org/emacs/PowerLine) which is a fork of [vim-powerline](https://github.com/Lokaltog/vim-powerline).
 
 
 ## Installation
 
-    (require 'powerline)
-    (powerline-default-theme)
-    
-The second line customizes `mode-line-format` according to the default theme.
+      (require 'powerline)
+      (powerline-jr0cket-theme)
 
-There are two builtin themes: `powerline-default-theme` and `powerline-center-theme`.
+  The second line customizes `mode-line-format` according to the jr0cket theme.
 
-You can revert back to the original value of `mode-line-format` that was being used when powerline was loaded using `powerline-revert`.
+  There are two other themes: `powerline-default-theme` and `powerline-center-theme`.
+
+  You can revert back to the original value of `mode-line-format` that was being used when powerline was loaded using `powerline-revert`.
 
 ## Faces
 
-The faces that powerline uses for the builtin themes are `powerline-active1` and `powerline-active2` for the active modeline, and `powerline-inactive1` ande `powerline-inactive2` for the inactive modelines. If you create your own theme, you can add as many faces as you want and pass those faces to the corresponding `powerline-*` functions when creating your `mode-line-format`.
+The faces that powerline uses for the builtin themes are `powerline-active0`, `powerline-active1` and `powerline-active2` for the active modeline, and `powerline-inactive0`, `powerline-inactive1` and `powerline-inactive2` for the inactive modelines. You can add as many faces as you want and pass those faces to the corresponding `powerline-*` functions when creating your `mode-line-format`.
 
 
 ## Custom Themes
 
 Please look over the `powerline-default-theme` and `powerline-center-theme` in [`powerline-themes.el`](https://github.com/milkypostman/powerline/blob/master/powerline-themes.el) for examples of themes that involve different justifications of modeline text.
 
-You can write your own powerline theme by simply setting your own `mode-line-format` to be an evaluation (`:eval`) of the powerline functions. Notice in `powerline-default-theme` the `let*` defines two lists: `lhs` and `rhs` which are exactly the lists that define what goes on the left and right sides of the modeline. The `powerline-center-theme` demonstrates how to *center* justify part of the modeline and defines an additional `center` list which is exactly the modeline components to be displayed in the middle section. 
+You can write your own powerline theme by simply setting your own `mode-line-format` to be an evaluation (`:eval`) of the powerline functions. Notice in `powerline-default-theme` the `let*` defines two lists: `lhs` and `rhs` which are exactly the lists that define what goes on the left and right sides of the modeline. The `powerline-center-theme` demonstrates how to *center* justify part of the modeline and defines an additional `center` list which is exactly the modeline components to be displayed in the middle section.
 
 In *most* circumstances you should only need to modify the builtin themes unless you are trying to do a particularly unique layout.
 

@@ -1,25 +1,26 @@
 ;;; powerline-themes.el --- Themes for Powerline
 
+;; Copyright (C) 2015 John Stevenson
 ;; Copyright (C) 2012-2013 Donald Ephraim Curtis
 ;; Copyright (C) 2013 Jason Milkins
 ;; Copyright (C) 2012 Nicolas Rougier
 
-;; Author: Donald Ephraim Curtis <dcurtis@milkbox.net>
-;; URL: http://github.com/milkypostman/powerline/
-;; Version: 2.0
+;; Author: John Stevenson @jr0cket
+;; URL: http://github.com/jr0cket/powerline/
+;; Version: 3.0
 ;; Keywords: mode-line
 
 ;;; Commentary:
 ;;
 ;; Themes for Powerline.
-;; Included themes: default, center, center-evil, vim, and nano.
+;; Included themes: jr0cket, default, center, center-evil, vim, and nano.
 ;;
 
 ;;; Code:
 
 ;;;###autoload
 (defun powerline-jr0cket-theme ()
-  "Customisation of the default powerline theme"
+  "Customisation of the default powerline theme, creating a style to match Emacs Live"
   (interactive)
   (setq-default mode-line-format
                 '("%e"

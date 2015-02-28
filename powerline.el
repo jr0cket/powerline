@@ -1,19 +1,20 @@
 ;;; powerline.el --- Rewrite of Powerline
 
+;; Copyright (C) 2015 John Stevenson
 ;; Copyright (C) 2012-2013 Donald Ephraim Curtis
 ;; Copyright (C) 2013 Jason Milkins
 ;; Copyright (C) 2012 Nicolas Rougier
 
-;; Author: Donald Ephraim Curtis <dcurtis@milkbox.net>
-;; URL: http://github.com/milkypostman/powerline/
-;; Version: 2.3
+;; Author: John Stevenson @jr0cket
+;; URL: http://github.com/jr0cket/powerline/
+;; Version: 3.0
 ;; Keywords: mode-line
 ;; Package-Requires: ((cl-lib "0.2"))
 
 ;;; Commentary:
 ;;
-;; Powerline is a library for customizing the mode-line that is based on the Vim
-;; Powerline. A collection of predefined themes comes with the package
+;; Powerline is a library for customizing the mode-line that is based on the Vim Powerline.
+;; Added jr0cket theme designed to be of similar style to Emacs Live, to the collection of predefined themes that comes with the package
 
 
 (require 'powerline-themes)
